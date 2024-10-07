@@ -1,0 +1,91 @@
+/* Company Info Styles */
+.company-info {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .company-details h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .company-details p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .add-review-btn {
+    background-color: #6a1b9a; /* Purple color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-review-btn:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+  }
+  
+  .rating-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .rating-value {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-value span {
+    font-size: 32px; /* Increase font size for visibility */
+    margin-right: 5px;
+  }
+  
+  .stars {
+    color: #ffb400; /* Gold color for stars */
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .review-content {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .review-header h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .review-rating span {
+    color: #ffb400; /* Gold color for stars */
+  }
+  

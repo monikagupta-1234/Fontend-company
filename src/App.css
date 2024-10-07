@@ -1,0 +1,349 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+.logo span {
+  color: #8f3be3; /* Purple for &RATE */
+}
+
+.header-right button {
+  margin-left: 15px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.signup-btn {
+  background-color: #8f3be3;
+  color: white;
+}
+
+.login-btn {
+  background-color: #f0f0f0;
+}
+
+/* Search and Add Company Section */
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.select-city {
+  display: flex;
+  align-items: center;
+}
+
+.select-city label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#city {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.find-company-btn {
+  background-color: #8f3be3;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-company-btn {
+  background-color: #8f3be3;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Company List and Sorting Section */
+.result-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-options span {
+  font-size: 16px;
+  color: #333;
+}
+
+.sort-dropdown label {
+  margin-right: 10px;
+}
+
+.sort-dropdown select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.company-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.company-info {
+  flex-grow: 2;
+  padding-left: 20px;
+}
+
+.company-name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.company-address {
+  color: #666;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+}
+
+.rating-section .rating {
+  font-size: 18px;
+  color: #f48b18;
+  margin-right: 8px;
+}
+
+.rating-section .stars {
+  color: #ffc107; /* Star color */
+}
+
+.company-actions {
+  text-align: right;
+}
+
+.company-actions .founded-date {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #999;
+}
+.gap{
+  gap:5px
+}
+.detail-review-btn {
+  background-color:black;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* General styles for sort dropdown */
+.sort-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-btn {
+  background-color: #8f3be3; /* Same color as the Add Company button */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:10px
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 8px; /* Space between button and dropdown */
+}
+
+/* Show the dropdown content on button hover */
+.sort-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Ensure layout of search section */
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  border-radius: 8px;
+  outline: none;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.cursor{
+  cursor: pointer;
+}
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #5b34da;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #4a29b8;
+}
